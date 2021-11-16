@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>The Blog Writing</h1>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<!-- Then start by creating a navbar. -->
+
+      <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a href="/editor" class="link">editor</a></li>
+        </ul>
+    </nav>
+
+<!-- Now create the header. -->
+
+<header class="header" style="background-image: url('https://source.unsplash.com/featured/?planet')">
+    <div class="content">
+        <h1 class="heading">
+            <span class="small">welcome in the world of</span>
+            blog
+            <span class="no-fill">writing</span>
+        </h1>
+        <a href="/editor" class="btn">write a blog</a>
+    </div>
+</header>
+
+<!-- Now the last element for our homepage. Make blog card section and make one card, as we make these cards with JS later. -->
+<section class="blogs-section">
+    <div class="blog-card">
+        <img src="https://source.unsplash.com/featured/?adventure" class="blog-image" alt="">
+        <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+        <a href="/" class="btn dark">read</a>
+    </div>
+
+    <!-- <div class="blog-card">
+        <img src="img/header.png" class="blog-image" alt="">
+        <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+        <a href="/" class="btn dark">read</a>
+    </div> -->
+</section>
+
+</section>
+
+<!-- In editor.html link both home.css and editor.css files. And inside body tag start by making banner div. -->
+<div class="banner">
+    <input type="file" accept="image/*" id="banner-upload" hidden>
+    <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt="upload banner"></label>
+
+<!-- And then make text fields for blog title, article -->
+    <div class="blog">
+    <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+    <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+</div>
+
+<!-- And at last, make publish button with upload image button also. -->
+<div class="blog-options">
+    <button class="btn dark publish-btn">publish</button>
+    <input type="file" accept="image/*" id="image-upload" hidden>
+    <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+</div>
+
+<div class="banner"></div>
+
+<div class="blog">
+    <h1 class="title"></h1>
+    <p class="published"><span>published at - </span></p>
+    <div class="article">
+
+    </div>
+</div>
+
+<h1 class="sub-heading">Read more</h1>
+
+</section>
+
+</div>
+
+</body>
+</html>
